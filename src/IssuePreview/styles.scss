@@ -1,0 +1,141 @@
+/* styles.scss */
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        p {
+            color: green;
+            /* Estilos para el mensaje de alerta */
+        }
+    }
+}
+
+.md-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+}
+
+.issue-preview {
+    border: 1px solid #d1d5da;
+    border-radius: 1rem;
+    padding: 16px;
+    background-color: #f6f8fa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.issue-preview h1,
+.issue-preview h2,
+.issue-preview h3,
+.issue-preview h4,
+.issue-preview h5,
+.issue-preview h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.issue-preview p {
+    margin-bottom: 16px;
+}
+
+.issue-preview ul {
+    margin-bottom: 16px;
+    padding-left: 32px;
+}
+
+.issue-preview ol {
+    margin-bottom: 16px;
+    padding-left: 32px;
+}
+
+.issue-preview li {
+    margin-bottom: 8px;
+}
+
+.issue-preview blockquote {
+    margin-bottom: 16px;
+    padding: 0 16px;
+    color: #6a737d;
+    border-left: 4px solid #dfe2e5;
+}
+
+.issue-preview code {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+.issue-preview pre {
+    margin-bottom: 16px;
+    padding: 16px;
+    font-size: 85%;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.issue-preview a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.issue-preview a:hover {
+    text-decoration: underline;
+}
+
+.issue-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los elementos específicos de ReactMarkdown */
+.issue-preview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.issue-preview th,
+.issue-preview td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.issue-preview th {
+    font-weight: bold;
+    background-color: #f6f8fa;
+}
+
+.issue-preview tr:nth-child(even) {
+    background-color: #f6f8fa;
+}
+
+.issue-preview tr:nth-child(odd) {
+    background-color: #ffffff;
+}
